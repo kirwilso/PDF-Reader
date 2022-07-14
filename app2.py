@@ -9,13 +9,13 @@ from tkinter.filedialog import askopenfile
 def open_file():
     browse_text.set("loading...") #this will set the text to "loading" when the user selects a PDF 
 
-    file = askopenfile(parent=root, mode='rb', title="Choose a file", filetype=[("Pdf file", "*pdf")])
+    file = askopenfile(parent=root, mode='rb', title="Choose a file", filetypes=[("Pdf file", "*pdf")])
     if file:
         read_pdf = PdfFileReader(file) # fixed usage of Class PdfFileReader that you imported from PyPDF2
 
         # CH maybe read more than just page 0?
-        num_pages = len(read_pdf.pages)
-        print("pdf contains", num_pages, "pages")
+        num_pages = len(read_pdf.pages) #tells you how many pages you have in a PDF 
+        print("pdf contains", num_pages, "pages") 
 
         page = read_pdf.getPage(0)
         page_content = page.extractText()
