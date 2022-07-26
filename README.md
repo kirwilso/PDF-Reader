@@ -10,7 +10,8 @@ Welcome to my first Python app ever! This is a simple app that allows users to u
 Here is the [Link](https://github.com/kirwilso/PDF-Reader/blob/master/PDF%20Reader%20App.py) to my app in Github.
 
 ###Instructions 
-1. Clone and download the app
+
+1. Clone or download the app
 2. Run the code on your preferred source code editor 
 
 <img width="610" alt="Screenshot1" src="https://user-images.githubusercontent.com/105668795/181113378-e74aee17-82d5-4d30-9f0f-f65a82cdc50d.png">
