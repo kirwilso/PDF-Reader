@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Read Me File for PDF File Reader
 
 Turn in link to github on Canvas and add to readme file on github
@@ -20,3 +21,7 @@ Thats it!
 
 
 Your Readme.md should have images (screenshots, graphs, etc.) This don't have to be super high-res and should be put in a subfolder (img or docs/img if you are going with a docs folder in your project)
+=======
+# hello-world
+This is a project for Kira. This project is my first Python app ever! My final app is called "PDF Reader App."
+>>>>>>> ab54a93d7c40301518cc65982bc062df858a5e9d
