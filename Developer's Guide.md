@@ -1,29 +1,72 @@
 # Developer's Guide for PDF File Reader 
 Add this to the doc folder in Github and hand in on Canvas
 
-###Overview (in which you can re-use material from your sketch or the user's guide)
+###Overview 
 
-Some text here 
+This is an app to extract text from a PDF using a GUI built with Visual Studio, Tkinter, PYPDF 2 and Pillow. The app will allow a user to open and select a PDF off their computer, and then it will extract the text. The app will feature a GUI that allows a user to browse for PDF’s in the industry standard way.  
 
 
-###Condensed version of the final(!) planning specs, i.e. which parts of the initial specs are actually currently implemented. 
+###Condensed Version of the Final Planning Specs
 
-some text here 
+When a user clicks the browse button on the GUI, on release of click the system triggers a browse modal to pop up.  
+
+When the user selects a PDF the app sends information that it is a PDF and proceeds to run the code that extracts the text. 
+
+When the user uploads a PDF and sees the text displayed in the GUI, there is a scroll bar on the GUI
+
+The app limits the user to a PDF file only and all other file types are disabled.
 
 ###Install/deployment/admin issues:
-Assume that the developer has already read your user's guide, knows how to run your app and has your project installed. If there are additional things that the dev (but not the user) needs to do or know (e.g. to run as admin, configure something first, install other stuff, deploy the server in a specific way, watch out for that) - this is the place to mention them!  
 
-###(End) User interaction and flow through your code ("walkthrough")
-Start be a brief(!) recap of what the flow of the user interaction is. If you didn't talk about the UX aspects earlier, mention them here. This should include screenshots where needed.
-Now, think about what happens at each step of the flow in your code. Describe, which classes, functions, etc. are involved. You can be as specific as you like here, but assume that the dev is also looking at your code while reading this, so no need to literally "cite" code, unless you think it's a vital snippet.
-However, should certainly mention the names of classes, functions (and in which module they can be found) and any hierarchies that are put  into (class inheritance, multi-level modules (packages), etc.)
-It maybe be useful to use graphics to illustrate some aspects of your explanation. This could be something like class diagrams or flow diagrams or even just simple tables.
+This app is very straight forward and simple. There should  ot be any install, deployment or admin issues for the user. 
 
-###Known Issues: You should mention any issues you know about (or suspect)
-Minor: anything that's a minor bug (non-breaking) that could easily be fixed given some time
-Major: anything that will break, how to possible work around it and maybe how to fix it
-(These could also come up in a user-centric, UX, UI context!)
 
+###(End) User interaction and flow through your code ("Happy Path")
+
+WHEN I run the app on my source code editor
+
+THEN I see a GUI that says “PDF Extract Text” 
+
+AND I see a button that says “Browse”  
+
+WHEN I click the “Browse” button  
+
+THEN I am prompted to search for PDFs and anything that is NOT a PDF will be unselectable 
+
+WHEN I select a PDF  
+
+THEN a plain text box appears with the extracted text  
+ 
+###Flow of Code
+
+Code Outline:
+
+* Importing items from modules 
+* Function that:
+    * Sets loading on click
+    * Opens file on click
+    * Deletes any old text
+    * Reads more than just one page of PDF
+    * For loop that extracts the text from the PDF
+    * Inserting text box for GUI
+    * Sets text back to "browse" after selection
+* Creation of TK Canvas
+* Logo for GUI
+* Instructions on GUI
+* Creation of browse button 
+* Text box that sets scroll bar 
+* Creating and packing text into the text area 
+* Scroll bar repositioning 
+* Final adjustments to canvas for style 
+
+###Known Issues: 
+Minor: Mac os has issues with showing GUI design correctly
 
 ###Future work:
-Here you can offer some insights into how your project could be expanded. Maybe there were some points in your initial spec that you didn't get to. Or maybe, during development, you found that you could also do something cool ... but didn't have the time or resources to do it.
+
+Possible future additons are:
+
+* Modifying the app to be able to edit PDFs.
+* Modifying the app to be able to save/rename PDFs.
+* Modifying the app to look better. 
+* Modifying the app to allow the user to select which pages of a PDF they want to view. 
