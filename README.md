@@ -12,13 +12,21 @@ Here is the [Link](https://github.com/kirwilso/PDF-Reader/blob/master/PDF%20Read
 ###Instructions 
 1. Clone and download the app
 2. Run the code on your preferred source code editor 
-3. Click the "Browse" button to upload a PDF
-4. Select the PDF you want to extract text from 
+
+<img width="610" alt="Screenshot1" src="https://user-images.githubusercontent.com/105668795/181113378-e74aee17-82d5-4d30-9f0f-f65a82cdc50d.png">
+4. Click the "Browse" button to upload a PDF
+
+<img width="828" alt="Screenshot2" src="https://user-images.githubusercontent.com/105668795/181113559-7bf60b0e-7a8b-4d74-9de2-4143425cc3cc.png">
+6. Select the PDF you want to extract text from 
+
+<img width="597" alt="Screenshot3" src="https://user-images.githubusercontent.com/105668795/181113607-6b10f290-dd21-44f1-a34e-0760fc0cdcaf.png">
 
 Thats it!
 
 
 
 
-Your Readme.md should have images (screenshots, graphs, etc.) This don't have to be super high-res and should be put in a subfolder (img or docs/img if you are going with a docs folder in your project)
+
+
+
 
