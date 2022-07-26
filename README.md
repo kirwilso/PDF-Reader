@@ -12,7 +12,6 @@ Here is the [Link](https://github.com/kirwilso/PDF-Reader/blob/master/PDF%20Read
 ###Instructions 
 1. Clone and download the app
 2. Run the code on your preferred source code editor 
-! [Alt text](https://github.com/kirwilso/PDF-Reader/blob/master/Assets%20Folder/Screenshot1.png)
 3. Click the "Browse" button to upload a PDF
 4. Select the PDF you want to extract text from 
 
