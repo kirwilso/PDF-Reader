@@ -19,7 +19,7 @@ Here is the [Link](https://github.com/kirwilso/PDF-Reader/blob/master/PDF%20Read
 <img width="828" alt="Screenshot2" src="https://user-images.githubusercontent.com/105668795/181113559-7bf60b0e-7a8b-4d74-9de2-4143425cc3cc.png">
 6. Select the PDF you want to extract text from 
 
-<img width="597" alt="Screenshot3" src="https://user-images.githubusercontent.com/105668795/181113607-6b10f290-dd21-44f1-a34e-0760fc0cdcaf.png">
+<img width="597" alt="Screenshot3" src="./Assets Folder/Screenshot3.png">
 
 Thats it!
 
