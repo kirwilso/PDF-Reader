@@ -9,7 +9,7 @@ from tkinter.filedialog import askopenfile
 def open_file():
     browse_text.set("loading...") #this will set the text to "loading" when the user selects a PDF 
 
-    file = askopenfile(parent=root, mode='rb', title="Choose a file", filetypes=[("Pdf file", "*pdf")])
+    file = askopenfile(parent=root, mode='rb', title="Choose a file", filetypes=[("Pdf file", "*.pdf")])
     if file:
         read_pdf = PdfFileReader(file) # fixed usage of Class PdfFileReader that you imported from PyPDF2
 

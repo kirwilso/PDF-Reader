@@ -9,7 +9,7 @@ from tkinter.filedialog import askopenfile
 def open_file(): 
     browse_text.set("loading...") #this will set the text to "loading" when the user selects a PDF 
 
-    file = askopenfile(parent=root, mode='rb', title="Choose a file", filetype=[("Pdf file", "*pdf")])
+    file = askopenfile(parent=root, mode='rb', title="Choose a file", filetypes=[("Pdf file", "*.pdf")])
     if file:
         read_pdf = PdfFileReader(file) # fixed usage of Class PdfFileReader that you imported from PyPDF2
 
@@ -56,8 +56,8 @@ instructions.grid(columnspan=3, column=0, row=1)
 #Text box for the user 
 # CH you should not do that inside your function b/c that will create a new widget every time
 # Instead create it once and just clear and re-fill it
-text_box = tk.Text(root, height=10, width=50, padx=15, pady=15) #creating text box for PDF file to show up for user 
-text_box.grid(column=1, row=3)
+#text_box = tk.Text(root, height=10, width=50, padx=15, pady=15) #creating text box for PDF file to show up for user 
+#text_box.grid(column=1, row=3)
 
 
 #browse button 
@@ -66,6 +66,19 @@ browse_btn = tk.Button(root,  textvariable=browse_text, command=lambda:open_file
 #ERROR having trouble on line above, getting the button to turn blue. bg="blue" I think that this is a mac problem maybe? CH:  could be. Looks dark blue on my Win 10 PC
 browse_text.set("Browse")
 browse_btn.grid(column=1, row=2)
+
+#Text box for the user, but now inside a frame so we can stick a scroll bar opn the side 
+textframe = tk.Frame(root)
+textframe.grid(column=0, row=5, columnspan=5,  padx=30, pady=10, sticky=tk.EW)      
+
+# create and pack the text area
+text_box=tk.Text(textframe, padx=10, pady=10, height=30, width=70, wrap=tk.WORD) # pad here is an internal padding
+text_box.pack(side=tk.LEFT, fill=tk.BOTH)
+
+# yview callback gets called when the scroll bar or its arrows are moved
+# that will reposition the text in text_box
+text_scroll = tk.Scrollbar(textframe, command=text_box.yview)
+text_scroll.pack(side=tk.RIGHT, fill=tk.Y)
 
 
 #Making the canvas larger so it does not look weird 
