@@ -3,7 +3,7 @@
 
 Turn in link to github on Canvas and add to readme file on github
 
-###Intro style
+###Intro 
 
 Welcome to my first Python app ever! This is a simple app that allows users to upload a PDF and the app will extract the text. Feel free to use my app or copy the app as a basis to build something better!
 
