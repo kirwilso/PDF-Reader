@@ -1,5 +1,4 @@
 # Developer's Guide for PDF File Reader 
-Add this to the doc folder in Github and hand in on Canvas
 
 ###Overview 
 
