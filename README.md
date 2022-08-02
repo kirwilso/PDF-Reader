@@ -1,7 +1,5 @@
 <<<<<<< HEAD
-#Read Me File for PDF File Reader
 
-Turn in link to github on Canvas and add to readme file on github
 
 ###Intro 
 
