@@ -1,16 +1,13 @@
-<<<<<<< HEAD
-
-
-###Intro 
+### Intro 
 
 Welcome to my first Python app ever! This is a simple app that allows users to upload a PDF and the app will extract the text. Feel free to use my app or copy the app as a basis to build something better!
 
 Here is the [Link](https://github.com/kirwilso/PDF-Reader/blob/master/PDF%20Reader%20App.py) to my app in Github.
 
-###Instructions 
+### Instructions 
 
-1. Clone or download the app
-2. Run the code on your preferred source code editor 
+1. Clone or download the project
+2. Run `PDF Reader App.py` 
 
 <img width="610" alt="Screenshot1" src="https://user-images.githubusercontent.com/105668795/181113378-e74aee17-82d5-4d30-9f0f-f65a82cdc50d.png">
 4. Click the "Browse" button to upload a PDF
